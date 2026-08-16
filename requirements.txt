@@ -1,0 +1,6 @@
+fastapi[standard]
+pymongo
+pyjwt
+pwdlib[argon2]
+pydantic-settings
+python-multipart
