@@ -28,7 +28,7 @@ async def create_product(
         "created_by": current_user["_id"]
     }
 
-    result = await products_collection.insert_one(
+    result = await products_collection.insert_one( #MongoDB driver directly, not an ODM.
         product_document
     )
 

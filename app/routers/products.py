@@ -32,7 +32,7 @@ async def create(
     product: ProductCreate,
     current_user: Annotated[
         dict, #should be a dict
-        Depends(get_current_user) #FastAPI gets it from get_current_user()
+        Depends(get_current_user) #FastAPI gets it from get_current_user() and put it inside current_user
     ]
 ):
     return await create_product(
